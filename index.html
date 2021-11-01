@@ -5,13 +5,121 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock, Paper, Scissors</title>
     <link rel="stylesheet" href="style.css">
-
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet">
   </head>
   <body>
-    
+    <!-- header -->
+    <header>
+        <img src="images/logo.svg" alt="logo">
+      <div class="score">
+        <h3>SCORE</h3>
+        <div class="score-num">
+          <p>0</p>
+        </div>
+      </div>
+    </header>
+
+    <!-- main -->
+    <main>
+      <article class="paper" data-id='paper'>
+        <div class="white-bg">
+          <img src="images/icon-paper.svg" alt="paper">
+        </div>
+      </article>
+
+      <article class="scissors" data-id='scissors'>
+        <div class="white-bg">
+          <img src="images/icon-scissors.svg" alt="scissors">
+        </div>
+      </article>
+
+      <article class="rock" data-id='rock'>
+        <div class="white-bg">
+          <img src="images/icon-rock.svg" alt="scissors">
+        </div>
+      </article>
+    </main>
+
+    <!-- picked -->
+    <div class="picked">
+
+      <div class="left-side">
+        <div class="left-side-article-div">
+        <article class="paper">
+          <div class="white-bg">
+            <img src="images/icon-paper.svg" alt="paper">
+          </div>
+        </article>
+        </div>
+
+        <div class="div-of-circles">
+          <div class="first-circle left-circles">
+          </div>
+          <div class="div-of-second-circle">
+            <div class="second-circle left-circles"></div>
+          </div>
+          <div class="div-of-third-circle">
+            <div class="third-circle left-circles"></div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="center">
+        <h3 class="text-win-losse"></h3>
+        <button>PLAY AGAIN</button>
+      </div>
+
+      <div class="right-side">
+        <div class="waiting-circle">
+          <img src="images/Spinner-1s-200px.svg" alt="">
+        </div>
+        <div class="right-side-article-div">
+        <article class="paper">
+          <div class="white-bg">
+            <img src="images/icon-paper.svg" alt="paper">
+          </div>
+        </article>
+      </div>
+
+        <div class="div-of-circles">
+          <div class="first-circle right-circles">
+          </div>
+          <div class="div-of-second-circle">
+            <div class="second-circle right-circles"></div>
+          </div>
+          <div class="div-of-third-circle">
+            <div class="third-circle right-circles"></div>
+          </div>
+        </div>
+
+      </div>
 
 
+    </div>
+
+    <!-- rules -->
+    <div class="rules">
+      <h3>RULES</h3>
+    </div>
+
+    <!-- modal and overlay -->
+    <div class="overlay hidden">
+      <div class="modal hidden">
+        <div class="modal-top">
+          <h2>RULES</h2>
+          <div class="modal-close-btn-div">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><path fill="#3B4262" fill-rule="evenodd" d="M16.97 0l2.122 2.121-7.425 7.425 7.425 7.425-2.121 2.12-7.425-7.424-7.425 7.425L0 16.97l7.425-7.425L0 2.121 2.121 0l7.425 7.425L16.971 0z" class="modal-close-svg" opacity=".25"/></svg>
+          </div>
+        </div>
+        <img src="images/image-rules.svg" alt="rules-img">
+        <div class="modal-close-btn-bottom">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><path fill="#3B4262" fill-rule="evenodd" d="M16.97 0l2.122 2.121-7.425 7.425 7.425 7.425-2.121 2.12-7.425-7.424-7.425 7.425L0 16.97l7.425-7.425L0 2.121 2.121 0l7.425 7.425L16.971 0z" class="modal-close-svg" opacity=".25"/></svg>
+        </div>
+      </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
